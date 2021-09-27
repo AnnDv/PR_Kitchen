@@ -1,7 +1,7 @@
 # PR laboratory No.1
 ## Kitchen
 
-This is the dinning hall part of Restaurant simulation of the first laboratory work at Network programming course.
+This is the kitchen part of Restaurant simulation of the first laboratory work at Network programming course.
 The dinning hall part: https://github.com/AnnDv/PR_Hall
 ## Main Task
 
