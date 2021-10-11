@@ -1,3 +1,11 @@
+import queue
+
+global TIME_UNIT
+TIME_UNIT = 1
+
+global FOOD_Q
+FOOD_Q = queue.PriorityQueue()
+
 global MENU 
 MENU = [{
     "id": 1,
@@ -61,29 +69,30 @@ MENU = [{
     "cooking-apparatus": None
 }]
 
-global TABLES
-TABLES = [{
-    "id": 1,
-    "state": 'TABLE_FREE',
-    "order_id": None
-}, {
-    "id": 2,
-    "state": 'TABLE_FREE',
-    "order_id": None
-}, {
-    "id": 3,
-    "state": 'TABLE_FREE',
-    "order_id": None
-}, {
-    "id": 4,
-    "state": 'TABLE_FREE',
-    "order_id": None
-}, {
-    "id": 5,
-    "state": 'TABLE_FREE',
-    "order_id": None
-}
-]
-
 global ORDERS
 ORDERS = []
+
+global CHEFS_LIST
+CHEFS_LIST = [
+    {
+    "id": 1,
+    "rank": 3,
+    "proficiency": 3,
+    "name": "Masahiro Yoshitake",
+    "catch-phrase": "I have 6 Michelin Stars"
+},
+{
+    "id": 2,
+    "rank": 2,
+    "proficiency": 3,
+    "name": "Thomas Keller",
+    "catch-phrase": "I have 7 Michelin Stars"
+},
+{
+    "id": 3,
+    "rank": 1,
+    "proficiency": 3,
+    "name": "Joël Robuchon",
+    "catch-phrase": "I have 31 Michelin Stars"
+}
+]
