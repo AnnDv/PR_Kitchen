@@ -77,22 +77,36 @@ CHEFS_LIST = [
     {
     "id": 1,
     "rank": 3,
-    "proficiency": 3,
+    "proficiency": 4,
     "name": "Masahiro Yoshitake",
     "catch-phrase": "I have 6 Michelin Stars"
 },
 {
     "id": 2,
-    "rank": 2,
+    "rank": 1,
     "proficiency": 3,
     "name": "Thomas Keller",
     "catch-phrase": "I have 7 Michelin Stars"
 },
 {
     "id": 3,
-    "rank": 1,
+    "rank": 2,
     "proficiency": 3,
     "name": "Joël Robuchon",
     "catch-phrase": "I have 31 Michelin Stars"
 }
 ]
+
+global STOVES_Q
+STOVES_Q = queue.Queue()
+STOVES_Q.put(0)
+STOVES_Q.put(1)
+STOVES_Q.put(2)
+STOVES_Q.put(3)
+
+global OVENS_Q
+OVENS_Q = queue.Queue()
+OVENS_Q.put_nowait(0)
+OVENS_Q.put_nowait(1)
+OVENS_Q.put_nowait(2)
+OVENS_Q.put_nowait(3)
